@@ -4,13 +4,15 @@ import { useLocation } from "react-router";
 import {Link} from "react-router-dom";
 import { Context } from "../context/Context";
 import "./css/singletask.css";
+import {Config} from '../Config';
+
 
 
 export default function SingleTask() {
   const location =useLocation();
   const path = location.pathname.split("/")[2];
   const [task, setTask] = useState({})
-  const PF = "http://localhost:5000/images/";
+  // const PF = "http://localhost:5000/images/";
   const {user} = useContext(Context);
   const [title,setTitle] = useState("")
   const [desc,setDesc] = useState("")
@@ -22,7 +24,7 @@ export default function SingleTask() {
 
     useEffect(() => {
       const getTask = async () =>{
-        const res =await axios.get("http://localhost:5000/api/tasks/" + path);
+        const res =await axios.get(`${Config.userUrl}/tasks/` + path);
         setTask(res.data);
         setTitle(res.data.title);
         setDesc(res.data.desc);
@@ -31,7 +33,7 @@ export default function SingleTask() {
     }, [path]);
     const handleDelete = async()=>{
       try{
-      await axios.delete(`http://localhost:5000/api/tasks/${task._id}`, {
+      await axios.delete(`${Config.userUrl}/tasks/${task._id}`, {
         data: {username:user.username},
       });
       
@@ -41,7 +43,7 @@ export default function SingleTask() {
 
   const handleUpdate = async ()=>{
     try{
-      await axios.put(`http://localhost:5000/api/tasks/${task._id}`, {
+      await axios.put(`${Config.userUrl}/tasks/${task._id}`, {
         username:user.username, 
         title,
         desc,
@@ -55,7 +57,7 @@ export default function SingleTask() {
        <div className="singlePostWrapper">
          {task.photo &&
          <img className="singlePostImg"
-         src={PF + task.photo} 
+         src={`${Config.imgUrl}` + task.photo} 
          alt=""  
          />
          }{updateMode ? (

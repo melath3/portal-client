@@ -1,14 +1,16 @@
 import "../components/css/task.css"
 import {Link} from "react-router-dom";
+import {Config} from '../Config';
+
 
 export default function Task({task}) {
-  const PF = "http://localhost:5000/images/";
+  // const PF = "http://localhost:5000/images/";
   return (
     <div className="post">
       {task.photo && (
       <img 
       className="postImg" 
-      src={PF + task.photo} 
+      src={`${Config.imgUrl}` + task.photo} 
       alt="" 
       />
       )}

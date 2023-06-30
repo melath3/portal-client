@@ -7,6 +7,7 @@ import { StepTitle } from 'semantic-ui-react';
 import Button from '@mui/material/Button';
 import {useNavigate } from 'react-router';
 import  EditForm from '../pages/EditForm'
+import {Config} from '../Config';
 
 
 
@@ -30,14 +31,14 @@ const TaskList = () => {
    
     
     useEffect(() => {
-      axios.get(`http://localhost:5000/api/tasks`)
+      axios.get(`${Config.userUrl}/tasks`)
           .then((response) => {
               setTableData(response.data);
           })
   }, [])
 
   const getData = (id) => {
-    axios.get(`http://localhost:5000/api/tasks`)
+    axios.get(`${Config.userUrl}/tasks`)
         .then((getData) => {
              setTableData(getData.data);
          })
@@ -45,7 +46,7 @@ const TaskList = () => {
 
 
   const onDelete = (id) => {
-    axios.delete(`http://localhost:5000/api/tasks/${id}`)
+    axios.delete(`${Config.userUrl}/tasks/${id}`)
  .then(() => {
     getData();
 })

@@ -6,6 +6,8 @@ import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import Tasks from "../components/Tasks";
 import "../components/css/managerHome.css";
+import {Config} from '../Config';
+
 
 
 const ManagerHome = () => {
@@ -14,7 +16,7 @@ const ManagerHome = () => {
 
   useEffect(()=>{
     const fetchTasks = async ()=>{
-     const res = await axios.get("http://localhost:5000/api/tasks" + search)
+     const res = await axios.get(`${Config.userUrl}/tasks` + search)
      setTasks(res.data)
     }
     fetchTasks()

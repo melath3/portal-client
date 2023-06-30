@@ -4,6 +4,8 @@ import { Button, Checkbox, Form } from 'semantic-ui-react'
 import "../components/css/createtask.css";
 import { Context } from "../context/Context";
 import  axios from "axios";
+import {Config} from '../Config';
+
 
 export default function CreateTask() {
   const [title,setTitle] = useState("");
@@ -25,13 +27,13 @@ export default function CreateTask() {
       data.append("file",file);
       newPost.photo = filename;
       try{
-        await axios.post("http://localhost:5000/api/upload",data);
+        await axios.post(`${Config.userUrl}/upload`,data);
 
       }catch(err){}
     }
     try{
 
-    const res= await axios.post("http://localhost:5000/api/tasks", newPost);
+    const res= await axios.post(`${Config.userUrl}/tasks`, newPost);
     window.location.replace("/task/" + res.data._id);
     
     }catch (err){}

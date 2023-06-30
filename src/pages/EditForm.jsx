@@ -3,6 +3,8 @@ import { Button,  Form } from 'semantic-ui-react'
 import axios from 'axios';
 import {useNavigate } from 'react-router-dom';
 import "../components/css/editform.css";
+import {Config} from '../Config';
+
 
 
 
@@ -27,7 +29,7 @@ useEffect(() => {
 //     return axios.put(`http://localhost:5000/api/tasks/${id}`, data);
 //   }
     const updateData = () => {
-        axios.put(`http://localhost:5000/api/tasks/${id}`, {
+        axios.put(`${Config.userUrl}/tasks/${id}`, {
             title,
             desc,
             username

@@ -5,6 +5,7 @@ import  axios  from "axios";
 import {Config} from "../Config";
 
 
+
 export default function Register() {
   const[username,setUsername] = useState("");
   const[email,setEmail] = useState("");
@@ -16,7 +17,7 @@ const handleSubmit = async (e)=>{
   e.preventDefault();
   setError(false);
   try{
-  const res = await axios.post("http://localhost:5000/api/auth/register", {
+  const res = await axios.post(`${Config.userUrl}/auth/register`, {
     username,
     email,
     password,

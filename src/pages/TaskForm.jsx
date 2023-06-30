@@ -3,6 +3,8 @@ import { Button, Checkbox, Form } from 'semantic-ui-react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import "../components/css/taskform.css";
+import {Config} from '../Config';
+
 
 export default function Create() {
   const navigate = useNavigate();
@@ -13,7 +15,7 @@ export default function Create() {
    
 
     const postData = () => {
-        axios.post(`http://localhost:5000/api/tasks`, {
+        axios.post(`${Config.userUrl}/tasks`, {
             title,
             desc,
             username
