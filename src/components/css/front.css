@@ -1,0 +1,88 @@
+
+
+.front{
+    position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: #171836;
+    
+}
+
+.frontLogo{
+position: absolute;
+width: 82px;
+height: 39.19px;
+left: 120px;
+top: 20px;
+
+font-family: 'Itim';
+font-style: normal;
+font-weight: 400;
+font-size: 26.1239px;
+line-height: 150%;
+}
+
+.frontMenu{
+display: flex;
+flex-direction: row;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.menuOne{
+    width: 40px;
+    height: 17px;
+    line-height: 17px;
+
+}
+.menuTwo{
+width: 42px;
+height: 17px;
+left: 84px;
+}
+.menuThree{
+    width: 55px;
+    height: 17px;
+    
+
+}
+.menuFour{
+    width: 46px;
+    height: 17px;
+  
+   
+    
+}
+
+.frontButton{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 32px;
+gap: 10px;
+
+position: absolute;
+width: 102px;
+height: 41px;
+left: 1218px;
+top: 19px;
+
+background: #F5443B;
+border-radius: 6px;
+}
+.frontImage{
+position: absolute;
+width: 785px;
+height: 752px;
+left: 191.85px;
+top: -2.01px;
+}

@@ -9,33 +9,30 @@ import EditForm from "./pages/EditForm";
 import Settings from "./pages/Settings";
 import Single from "./pages/Single";
 import UserHome from "./pages/UserHome";
-import ManagerHome from "./pages/ManagerHome"
+import ManagerHome from "./pages/ManagerHome";
+import "./app.css";
 
-import { useContext } from "react";
+
+import { useContext, useEffect, useState } from "react";
 import {Context} from "./context/Context";
 
+import {BrowserRouter,Routes,Route,Link,Outlet, Navigate,} from "react-router-dom";
 
 
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-  Outlet,
-} from "react-router-dom";
 
 function App() {
   const {user} = useContext(Context);
+//   // const isAuthenticated = localStorage.getItem("role");
+
 
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
 
-        <Route path="/user" element={user ?<UserHome/>:<Home />} />
-
+        <Route path="/user" element={user ?<UserHome/>:<Register />} />
+       
         <Route path="/manager" element={user ?<ManagerHome/>:<Register />} />
-
 
         <Route path="/register" element={user ? <Home /> : <Register />} />
         <Route path="/login" element={user ? <Home /> : <Login />} />

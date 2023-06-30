@@ -24,7 +24,7 @@ const ManagerHome = () => {
     <div>
         
         
-        <Navbar/>
+        {/* <Navbar/> */}
         <div className='managerHome'>
         <Tasks tasks={tasks}/>
         </div>

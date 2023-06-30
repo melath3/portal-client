@@ -4,14 +4,20 @@ import Header from '../components/Header';
 import Navbar from '../components/navbar/Navbar';
 import "../components/css/home.css";
 import TaskList from '../components/TaskList';
+import Slider from '../components/Slider';
+import Frontpage from '../components/Frontpage';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       
       <Navbar/>
-      <Header/>
-      <TaskList/>
+      {/* <Slider/>  */}
+       <Header/>
+      {/* <Footer/> */}
+
+     
      
     </div>
   )

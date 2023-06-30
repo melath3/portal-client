@@ -1,0 +1,17 @@
+footer {
+    background: darkblue;
+    margin: 32px 0 0px;
+    padding: 32px 0;
+}
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+      li {
+        color: white;
+        margin-bottom: 16px; 
+      }
+    
+  
+  
