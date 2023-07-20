@@ -17,22 +17,30 @@ export default function Navbar() {
   }
 
   return (
+      
     <div className="top">
           
 <div className="topLeft">
-      <img className="topIcon" src="https://www.ethiosss.org/wp-content/uploads/2022/09/photo_2022-09-11_16-29-03-1.jpg" alt="SSGI-logo" />
-      <Link style={{ color: "rgb(165, 91, 42)", textDecoration: 'none' }}  to="/"><h2> SSGI VOLUNTEERS</h2></Link>
+
+      <Link   to="/">
+      <img className="topIcon" src="https://media.licdn.com/dms/image/C4E03AQEVOwsIGC-kow/profile-displayphoto-shrink_800_800/0/1660308234341?e=2147483647&v=beta&t=-YHcXs0mA2PLetSGgg5_q2szsSFkISSPsCNWo6cz9Lc" alt="SSGI-logo" />
+      </Link>
 </div>
-      <div className="topCenter">
+      <div className="topRight">
         <ul className="topList">
         
-          <li className="topListItem">
-           <Link style={{ textDecoration: 'none', color:"rgb(165, 91, 42)" }} to="/about">About</Link>
+          {/* <li className="topListItem">
+           <Link style={{ textDecoration: 'none', color:"rgb(219, 142, 40)" }} to="/about">About</Link>
           </li>
           <li className="topListItem">
-           <Link style={{ textDecoration: 'none', color:"rgb(165, 91, 42)"  }} to="/contact">Contact</Link>
+           <Link style={{ textDecoration: 'none', color:"rgb(219, 142, 40)"  }} to="/contact">Contact</Link>
 
-          </li>
+          </li> */}
+         
+          {/* <li className="topListItem">
+           <Link style={{ textDecoration: 'none', color:"rgb(219, 142, 40)"  }} to="/manager">Manager </Link>
+
+          </li> */}
           
 
           <li className="topListItem" onClick={handleLogout}>{user && "Logout"}</li>
@@ -52,14 +60,18 @@ export default function Navbar() {
               /></Link>
           ) : (
               <ul className="topList">
+                 <li className="topListItem">
+           <Link style={{ textDecoration: 'none', color:"rgb(219, 142, 40)"  }} to="/user">For Managers </Link>
+
+          </li>
                <li className="topListItem">
-                 <Link className="link" to="/login">
-                   LOGIN
+                 <Link className="link" style={{ textDecoration: 'none', color:"rgb(219, 142, 40)"  }} to="/login">
+                   Login
                  </Link>
                </li>
                <li className="topListItem">
-                <Link className="link" to="/register">
-                  REGISTER
+                <Link className="link" style={{ textDecoration: 'none', color:"rgb(219, 142, 40)"  }} to="/register">
+                  Register
                 </Link>
                </li>
               </ul>
@@ -68,9 +80,14 @@ export default function Navbar() {
             )
           }
           
-            <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
+            
             </div>
+    <div>
     
     </div>
+
+    </div>
+    
+   
   )
 }

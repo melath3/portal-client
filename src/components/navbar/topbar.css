@@ -1,30 +1,41 @@
 .top{
   width: 100%;
   height: 80px;
-  background-color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255) !important;
   opacity: 0.3px;
   top: 0;
+  font-family: 'Josefin Sans', sans-serif;
   display: flex;
   align-items: center;
-  font-family: 'Josefin Sans', sans-serif;
+  float: left;
+
   z-index: 999;
-  color: rgb(165, 91, 42);
+  color:rgb(219, 142, 40);
+  font-size: 12px;
   font-weight: bolder;
+  
   
 
 }
+
+
+
+
 
 .topLeft,.topRight{
   flex: 3;
   display: flex;
   align-items: center;
   justify-content: center;
+  color:rgb(219, 142, 40);
+
  
   
 }
 
 ul{
   text-decoration: none;
+
 }
 
 
@@ -35,10 +46,12 @@ ul{
   
 }
 .topIcon{
-  font-size: 20px;
+  font-size: 12px;
   margin-right: 10px;
   color: rgb(247, 242, 242);
   cursor: pointer;
+  width: 200px;
+
 }
 .topImg{
   width: 40px;
@@ -58,13 +71,15 @@ ul{
 }
 .topListItem{
   margin-right: 20px;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 300;
   cursor: pointer;
+  color:rgb(219, 142, 40);
+
 }
 .topSearchIcon{
   font-size: 18px;
-  color:rgb(241, 237, 237);
+  color: rgb(25, 40, 87);
   cursor:pointer;
   margin-left: 15px;
 

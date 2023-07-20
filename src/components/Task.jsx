@@ -6,7 +6,7 @@ import {Config} from '../Config';
 export default function Task({task}) {
   // const PF = "http://localhost:5000/images/";
   return (
-    <div className="post">
+  <div className="post">
       {task.photo && (
       <img 
       className="postImg" 
@@ -15,7 +15,7 @@ export default function Task({task}) {
       />
       )}
       
-      <div className="postInfo">
+   <div className="postInfo">
           <div className="postCats">
             
         
@@ -24,13 +24,14 @@ export default function Task({task}) {
       <span className="postTitle">{task.title} </span>
 
       </Link>
-      <hr />
-      <span className="postDate">{new Date(task.createdAt).toDateString()}</span>
-    </div>
-    <p className="postDesc">
+      <p className="postDesc">
     {task.desc}
         </p>
+      <hr />
+      <span className="postDate">{new Date(task.createdAt).toDateString()}</span>
+  </div>
+   
     
-    </div>
+  </div>
   );
 }

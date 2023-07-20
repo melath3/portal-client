@@ -15,7 +15,7 @@ const Home = () => {
       <Navbar/>
       {/* <Slider/>  */}
        <Header/>
-      {/* <Footer/> */}
+      <Footer/>
 
      
      

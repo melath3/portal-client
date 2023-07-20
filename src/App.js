@@ -30,7 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
 
-        <Route path="/user" element={user ?<UserHome/>:<Register />} />
+        <Route path="/user" element={<UserHome/>} />
        
         <Route path="/manager" element={user ?<ManagerHome/>:<Register />} />
 

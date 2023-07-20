@@ -50,7 +50,7 @@ export default function CreateTask() {
       <form className="writeForm" onSubmit={handleSubmit}>
           <div className="writeFormGroup">
               <label htmlFor="fileInput">
-              <i className="writeIcon fa-solid fa-plus"></i>
+              <i className="writeIcon fa-solid fa-plus" style={{"color": "rgb(25, 40, 87)"}}></i>
               </label>
               <input
                 type="file" 

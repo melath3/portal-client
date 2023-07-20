@@ -106,6 +106,9 @@ const TaskList = () => {
 <Link to='/createform'>
     <Button style={{ margin: '10px' }}  variant="contained">New Task</Button>
 </Link>
+
+    <button style={{ margin: '10px' }}  variant="contained"><Link to='/create'>Assign Task</Link></button>
+
     <div style={{ height: 700, width: '100%' }}>
       <DataGrid
         rows={tableData}

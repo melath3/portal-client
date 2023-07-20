@@ -7,6 +7,8 @@ html, body {
    
   }
 
+  
+
   h1 {
     text-align: center;
     color: #ffffff;
@@ -34,7 +36,7 @@ html, body {
   .formButton{
     border:0; outline:0;
     color: white; 
-    background:  rgb(91, 247, 70);
+    background-color: rgb(25, 40, 87);
     cursor: pointer;
     ;
     border-radius:8px;
