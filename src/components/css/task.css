@@ -1,7 +1,7 @@
 .post{
     width: 400px;
     margin: 0px 0px 40px 25px;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     
 }
 .postImg{
@@ -51,5 +51,16 @@
       -webkit-line-clamp: 4;
       -webkit-box-orient: vertical;
  }
+
+ @media screen and (max-width: 500px) {
+
+     .postImg{
+       width:80%;
+     }
+   
+ 
+   
+   
+   }
 
  

@@ -3,6 +3,27 @@
 
 }
 
+@media screen and (max-width: 420px) {
+
+    .art{
+      width:100%;
+      font-size:18px ;
+     
+  
+    }
+  
+    .content{
+      width:25%;
+  
+    }
+  
+  .img{
+  
+    width:50%;
+  }
+  
+  }
+
 
 
 

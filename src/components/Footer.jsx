@@ -9,31 +9,25 @@ const Footer = () => {
   <div className="row">
     <div className="col-md-4">
       <ul>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
+        <li>About us</li>
+        <li>Contact us</li>
+        <li>Blog</li>        
       </ul>
     </div>
     <div className="col-md-4">
       <ul>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
+        <li>Career</li>
+        <li>How to volunteer</li>
+        <li>Help & support</li>
       </ul>
     </div>
     <div className="col-md-4">
       <ul>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
-        <li>Footer Link</li>
+        <li>Follow Us</li>
+        <li>icons</li>
+        <li>Terms of Service</li>
+        <li>privacy policy</li>
+       
       </ul>
     </div>
   </div>
